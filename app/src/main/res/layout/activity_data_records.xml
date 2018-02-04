@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEEED">
+
+    <TextView
+        android:id="@+id/VoltageStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/CurrentStat"
+        android:layout_marginTop="28dp"
+        android:text="Voltage Reading"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/voltage"
+        android:layout_width="150dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VoltageStat"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="12dp"
+
+        android:elevation="1dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/CurrentStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/voltage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Current Reading"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="150dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/voltage"
+        android:layout_below="@+id/CurrentStat"
+        android:layout_marginTop="13dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/powerStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Power"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/power"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_alignStart="@+id/current"
+        android:layout_below="@+id/powerStat"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/EnergyStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/power"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Energy Used"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/energy"
+        android:layout_width="150dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/power"
+        android:layout_below="@+id/EnergyStat"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/energy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Cost"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/energy"
+        android:layout_width="150dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="22dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
